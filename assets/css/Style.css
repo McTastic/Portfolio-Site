@@ -67,12 +67,22 @@ footer {
     padding:12rem;
     height: 100vh;
     margin: 2rem 0 4rem 0;
-    background: url(https://images.unsplash.com/photo-1500417148159-68083bd7333a) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1500417148159-68083bd7333a) center center no-repeat;
+    background-size: cover;
 }
 
 .hero h1{
     color: white;
-    font-size: 12rem;
+    font-size: 10rem;
+    width: 25%;
+}
+
+.hero h1::selection{
+    display: none;
+}
+
+.hero p::selection{
+    display: none;
 }
 
 .hero p{
@@ -99,8 +109,6 @@ footer {
     align-content: center;
     flex-wrap: wrap;
     margin: 1rem auto;
-    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2); */
-    /* box-shadow: 0 0 20px #eee; */
   }
 
 
@@ -113,8 +121,6 @@ footer {
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2); */
-    /* box-shadow: 0 0 20px #eee; */
     border-radius: 10px;
     background-image: linear-gradient(to right,#84fab0 0%, #8fd3f4 51%, #84fab0 100%);
 }
