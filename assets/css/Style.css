@@ -9,6 +9,10 @@ body {
 
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 header{
     display: flex;
     position: fixed;
@@ -37,6 +41,14 @@ main {
 }
 
 section{
+    align-items: center;
+
+}
+
+section h2 {
+    margin-right: 2rem;
+    margin-left: 10rem;
+    font-size: 5rem;
 }
 
 
@@ -90,17 +102,6 @@ footer {
     font-size: 3rem;
 }
 
-.about{
-    padding: 1rem;
-}
-
-.cool-pic {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    opacity: 90%;
-}
-
 .nav-right {
     float: right;
     font-size: 26px;
@@ -142,4 +143,140 @@ footer {
 .nav-right a {
     justify-content: space-between;
     
+}
+
+.about{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h2{
+    position: relative;
+    left: -10rem;
+}
+
+.about-text{
+    position: relative;
+    left: -10.2rem;
+    text-align: left;
+    padding-left: 5rem;
+    width: 50%; 
+    border-left: solid #8fd3f4;
+    border-width: .3rem;
+
+}
+
+.work{
+    padding: 20rem 0 20rem 0;
+    display: flex;
+    height: 8rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    border: solid gold;
+}
+
+.work-tiles{
+    border-left: solid #8fd3f4;
+    height: 30rem;
+    border-width: .3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.banner{
+    position: relative;
+    bottom: -1.5rem;
+    left: -1.5rem;
+    height: 4rem;
+    width: 55%;
+    background:linear-gradient(45deg,#84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    /* border: solid purple; */
+}
+
+.big-tile{
+    display: flex;
+    margin: 1rem;
+    padding: 3rem;
+    order: 1;
+    width: 81.5%;
+    border-style: solid;
+    border-width: .75rem;
+    border-image: linear-gradient(45deg,#84faaf 0%, #8fd3f4 51%, #84fab0 100%) 1;
+    background: url(https://www.surfertoday.com/images/stories/glossary-of-surfing.jpg),   no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.big-tile .banner {
+    position: relative;
+    bottom: -2rem;
+    left: -3rem;
+    width: 30%;
+}
+
+.regular-tiles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    order: 2;
+    justify-content: center;
+    /* border: solid greenyellow; */
+}
+
+ .tile{
+     display: flex;
+     margin: .25rem .5rem .25rem .5rem;
+     width: 40%;
+     padding: 2rem;
+     border: solid red;
+ }
+
+ .contact{
+     display: flex;
+     height: 10rem;
+     width: 100%;
+     align-content: center;
+     justify-content: center;
+ }
+
+ .contact h2{
+     position: relative;
+     left: -8rem;
+ }
+
+ .contact ul{
+     position: relative;
+     left: -7.8rem;
+     padding: 2rem 0 2rem 5rem;
+     border-left: solid #8fd3f4;
+     border-width: .3rem;
+ }
+
+ .contact li{
+     font-size: 2rem;
+     display: inline-flex;
+     margin: 0 4rem 0 4rem;
+     border-bottom: solid black;
+
+ }
+
+ .contact a{
+     color: black;
+ }
+
+.cool-pic {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 90%;
 }

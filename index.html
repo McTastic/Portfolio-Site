@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/Landing-Page/assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/Landing-Page/assets/css/Style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/Style.css">
     <title>Landing Page</title>
 </head>
 
@@ -19,16 +19,16 @@
         <nav>
             <ul class="nav-right">
                 <li>
-                    <a class ="nav-btn" href="#">About Me</a>
+                    <a class="nav-btn" href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a class ="nav-btn" href="#"> Contact</a>
+                    <a class="nav-btn" href="#wrk"> Work</a>
                 </li>
                 <li>
-                    <a class ="nav-btn" href="#"> Work</a>
+                    <a class="nav-btn" href="#contact-me"> Contact</a>
                 </li>
                 <li>
-                    <a class ="nav-btn" href="#"> Resume</a>
+                    <a class="nav-btn" href="#"> Resume</a>
                 </li>
             </ul>
         </nav>
@@ -38,30 +38,69 @@
         <p> Quippy Text</p>
     </div>
     <main>
-        <section class="about">
+        <section class="about" id="about-me">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet repellat, voluptatum impedit excepturi beatae quam quas enim ipsa nam nisi commodi. Officia aspernatur veniam, ut vero molestias aperiam provident.</p>
+            <div class="about-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet repellat, voluptatum impedit
+                    excepturi beatae quam quas enim ipsa nam nisi commodi. Officia aspernatur veniam, ut vero molestias
+                    aperiam provident. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis vero aut ipsum
+                    unde voluptate blanditiis quis, voluptates corrupti enim velit id assumenda fugiat, recusandae
+                    corporis molestiae sapiente eos. Ea, optio!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facere fugit minima natus magnam
+                    necessitatibus, dignissimos ad at adipisci cupiditate inventore. Temporibus quidem unde amet,
+                    officia nihil quas consequuntur eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsam sed maxime hic eum officiis accusantium deleniti magni, quae suscipit doloribus corrupti
+                    repellat sapiente deserunt! Voluptate suscipit quibusdam expedita est explicabo!</p>
+            </div>
+        </section>
+        <section class="work" id="wrk">
+            <h2>Work</h2>
+            <div class="work-tiles">
+                <div class="big-tile">
+                    <div class="banner">
+                    <h3>Surf Report</h3>
+                    <p>MERN Stack</p>
+                </div>
+                </div>
+                <div class="regular-tiles">
+                    <div class="tile">
+                        <div class="banner">
+                        <h3>LED Wall</h3>
+                        <p>NODE/IoT</p>
+                    </div>
+                    </div>
+                    <div class="tile">
+                        <div class="banner">
+                        <h3>Calculator</h3>
+                        <p>React/Javascript/CSS</p>
+                    </div>
+                    </div>
+                    <div class="tile">
+                        <div class="banner">
+                        <h3>Pastel Puzzles</h3>
+                        <p>MERN Stack</p>
+                    </div>
+                    </div>
+                    <div class="tile">
+                        <div class="banner">
+                        <h3>Run Buddy</h3>
+                        <p>HTML/CSS</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact-me">
+            <h2>Contact Me</h2>
+            <ul>
+                <li>555.555.5555</li>
+                <li>myemail@coolemail.com</li>
+                <li><a href="#">Github</a></li>
+            </ul>
         </section>
         <img src="https://archziner.com/wp-content/uploads/2020/07/air-jordan-hoodie-worn-by-man-wearing-purge-mask-with-neon-lights-super-cool-wallpapers-holding-pink-smoke-bomb.jpg"
             class="cool-pic" alt="Person with X over their eyes with pink and blue smoke around them" />
-        <div class="contact-info">
-            <form action="/my-handling-form-page" method="post">
-                <ul>
-                    <li>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name">
-                    </li>
-                    <li>
-                        <label for="mail">E-mail:</label>
-                        <input type="email" id="mail" name="user_email">
-                    </li>
-                    <li>
-                        <label for="msg">Message:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                </ul>
-            </form>
-        </div>
     </main>
     <footer>Made By Sean</footer>
 </body>
