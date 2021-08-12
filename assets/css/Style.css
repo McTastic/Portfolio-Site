@@ -120,7 +120,7 @@ footer {
     padding: 1.25rem;
     text-align: center;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: .25s;
     background-size: 200% auto;
     border-radius: 10px;
     background-image: linear-gradient(to right,#84fab0 0%, #8fd3f4 51%, #84fab0 100%);
@@ -129,10 +129,6 @@ footer {
 
 .nav-btn:hover{
     background-position: right center;
-}
-
-.nav-right ul{
-
 }
 
 .nav-right li {
@@ -170,19 +166,19 @@ footer {
 }
 
 .work{
-    padding: 20rem 0 20rem 0;
     display: flex;
-    height: 8rem;
+    height: 65rem;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    border: solid gold;
+    /* border: solid gold; */
 }
 
 .work-tiles{
     border-left: solid #8fd3f4;
-    height: 30rem;
+    padding-bottom: 49.5rem;
+    height: 45rem;
     border-width: .3rem;
     display: flex;
     flex-wrap: wrap;
@@ -193,23 +189,26 @@ footer {
 .banner{
     position: relative;
     bottom: -1.5rem;
-    left: -1.5rem;
+    left: -2.2rem;
     height: 4rem;
-    width: 55%;
+    width: 45%;
     background:linear-gradient(45deg,#84fab0 0%, #8fd3f4 51%, #84fab0 100%);
     /* border: solid purple; */
 }
 
+.banner p{
+    font-size: 14px;
+}
+
 .big-tile{
     display: flex;
-    margin: 1rem;
-    padding: 3rem;
+    height: 30rem;
     order: 1;
     width: 81.5%;
     border-style: solid;
     border-width: .75rem;
     border-image: linear-gradient(45deg,#84faaf 0%, #8fd3f4 51%, #84fab0 100%) 1;
-    background: url(https://www.surfertoday.com/images/stories/glossary-of-surfing.jpg),   no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.surfertoday.com/images/stories/glossary-of-surfing.jpg),   no-repeat;
     background-size: cover;
 
 }
@@ -218,9 +217,10 @@ footer {
 
 .big-tile .banner {
     position: relative;
-    bottom: -2rem;
-    left: -3rem;
-    width: 30%;
+    padding: .5rem;
+    bottom: -22rem;
+    left: 0;
+    width: 25%;
 }
 
 .regular-tiles{
@@ -272,6 +272,30 @@ footer {
 
  .contact a{
      color: black;
+ }
+
+ #tile1{
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://onewayeventproductions.com/wp-content/uploads/2020/02/AdobeStock_289192813.jpeg), no-repeat;
+     border-image: linear-gradient(45deg,#84faaf 0%, #8fd3f4 51%, #84fab0 100%) 1;
+     border-width: .75rem;
+ }
+
+ #tile2{
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.insider.com/5a4bdbd41cbadd4b008b456b?width=1000&format=jpeg&auto=webp), no-repeat;
+     border-image: linear-gradient(45deg,#84faaf 0%, #8fd3f4 51%, #84fab0 100%) 1;
+     border-width: .75rem;
+ }
+
+ #tile3{
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1564115484-a4aaa88d5449?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGFzdGVsJTIwY29sb3JzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80), no-repeat;
+     border-image: linear-gradient(45deg,#84faaf 0%, #8fd3f4 51%, #84fab0 100%) 1;
+     border-width: .75rem;
+ }
+
+ #tile4{
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://36iusc2tb88y2g492si2bqd1-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/man-running-fast.jpg), center center;
+     border-image: linear-gradient(45deg,#84faaf 0%, #8fd3f4 51%, #84fab0 100%) 1;
+     border-width: .75rem;
  }
 
 .cool-pic {
