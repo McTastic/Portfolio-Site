@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     padding: auto;
     font-family: "poppins","sans-serif";
     flex-wrap: wrap;
@@ -23,7 +23,6 @@ header{
     width: 100%;
     height: 6rem;
     padding: 20px;
-    
 
 }
 
@@ -59,7 +58,6 @@ a {
 
 footer {
     order: 99;
-    width: 100%;
     height: 6rem;
     background-color: black;
     padding: 20px;
@@ -70,9 +68,15 @@ footer {
 
 .name{
     display: flex;
-    width: 60%;
+    width: 30%;
     font-size: 50px;
     color: white;
+}
+
+header h1::selection,
+.hero h1::selection,
+.hero p::selection{
+    display: none;
 }
 
 .hero{
@@ -89,33 +93,24 @@ footer {
     width: 25%;
 }
 
-.hero h1::selection{
-    display: none;
-}
-
-.hero p::selection{
-    display: none;
-}
-
 .hero p{
     color:white;
     font-size: 3rem;
 }
 
 .nav-right {
-    float: right;
+    /* float: right; */
     font-size: 26px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    width: 50rem;
     flex-wrap: wrap;
     margin: 1rem auto;
   }
 
 
   .nav-btn {
-    flex: 1 1 auto;
     color:black;
+    position: relative;
+    right: -10rem;
     margin: .25rem;
     padding: 1.25rem;
     text-align: center;
@@ -152,6 +147,7 @@ footer {
 .about h2{
     position: relative;
     left: -3rem;
+    width: 23.85rem;
 }
 
 .about-text{
@@ -190,6 +186,11 @@ footer {
     
 }
 
+.work h2{
+    position: relative;
+    left: -2rem;
+}
+
 .banner{
     position: relative;
     bottom: -1.5rem;
@@ -213,6 +214,8 @@ footer {
 
 .big-tile{
     display: flex;
+    position: relative;
+    bottom: .25rem;
     height: 30rem;
     order: 1;
     width: 81.5%;
@@ -260,13 +263,16 @@ footer {
 
  .contact h2{
      position: relative;
-     left: -8rem;
+     left: -19rem;
+     width: 30rem;
  }
 
  .contact ul{
      position: relative;
-     left: -4.5rem;
-     padding: 2rem 0 2rem 5rem;
+     display: flex;
+     width: 50rem;
+     left: -17.75rem;
+     padding: 2rem 0 2rem 2rem;
      border-left: solid #8fd3f4;
      border-width: .3rem;
  }
@@ -281,6 +287,13 @@ footer {
 
  .contact a{
      color: black;
+ }
+
+ #about-me{
+     display:block;
+     position:relative;
+     top: -250px;
+     visibility: hidden;
  }
 
  #tile1{
@@ -307,3 +320,67 @@ footer {
      border-width: .35rem;
  }
 
+ @media screen and (max-width: 768px) {
+    
+    header{
+        height: 15rem;
+    }    
+    footer{
+         margin-top: 25rem;
+     }
+
+     nav{
+         width: 35%;
+         height: 20rem;
+         display: flex;
+         width: 45%;
+         height: 10rem;
+
+     }
+
+     .name{
+         font-size: 4rem;
+     }
+
+     .nav-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 12rem;
+        width: 35rem;
+   
+     }
+
+    .nav-btn{
+        display: inline-block;
+        width: 100%;
+        height: 5rem;
+        position: relative;
+        left: 4rem;
+
+     }
+
+    .about h2{
+        position: relative;
+        left: -9rem;
+    }
+
+    .about-text{
+        position: relative;
+        left: -9rem;
+        font-size: 300%;
+        font-weight: 150;
+        width: 95%;
+    }
+
+    .hero{
+        height: 80rem;
+    }
+
+    .hero h1,
+    .hero p{
+        position: relative;
+        bottom: -10rem;
+    }
+
+}
