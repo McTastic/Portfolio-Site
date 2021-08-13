@@ -6,7 +6,6 @@ body {
     padding: auto;
     font-family: "poppins","sans-serif";
     flex-wrap: wrap;
-
 }
 
 h3 {
@@ -80,7 +79,7 @@ header h1::selection,
 }
 
 .hero{
-    padding:12rem;
+    padding: 8rem;
     height: 100vh;
     margin: 2rem 0 4rem 0;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1500417148159-68083bd7333a) center center no-repeat;
@@ -146,13 +145,17 @@ header h1::selection,
 
 .about h2{
     position: relative;
-    left: -3rem;
+    left: -2rem;
     width: 23.85rem;
+}
+
+.about p{
+    font-weight: bold;
 }
 
 .about-text{
     position: relative;
-    left: -2.45rem;
+    left: -2.4rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -279,7 +282,6 @@ header h1::selection,
 
  .contact li{
      font-size: 2rem;
-     display: inline-flex;
      margin: 0 4rem 0 4rem;
      border-bottom: solid black;
 
@@ -319,6 +321,21 @@ header h1::selection,
      border-image: linear-gradient(45deg, rgba(59,173,227,.75) 0%, rgba(87,111,230,.75) 25%, rgba(152,68,183,.75) 51%, rgba(255,53,127,.75) 100%) 1;
      border-width: .35rem;
  }
+
+ .my-pic img{
+    box-shadow: 12px 12px 2px 1px rgba(79, 79, 102, 0.336);;
+    opacity: 75%;
+    height: auto;
+    max-width: 15rem;
+}
+
+.my-pic{
+    position: relative;
+    top: 5rem;
+    height: auto;
+    /* border: solid red; */
+
+}
 
  @media screen and (max-width: 768px) {
     
@@ -370,7 +387,7 @@ header h1::selection,
         left: -9rem;
         font-size: 300%;
         font-weight: 150;
-        width: 95%;
+        width: 99%
     }
 
     .hero{
@@ -381,6 +398,62 @@ header h1::selection,
     .hero p{
         position: relative;
         bottom: -10rem;
+    }
+
+    .work{
+        position: relative;
+        top: 10rem;
+    }
+
+    .work h2{
+        position: relative;
+        padding: 0 10rem 2rem 4rem;
+        bottom: 2rem;
+        left: -2rem;
+        border-bottom: solid #8fd3f4;
+    }
+
+    .work-tiles{
+        border-left:none;
+        
+    }
+
+    .contact ul,
+    .contact li{
+        display: unset;
+        border-bottom: none;
+        position: relative;
+        bottom: -20rem;
+        left: -1rem;
+
+    }
+
+    .contact ul{
+        left: -15rem;
+    }
+
+    .contact li{
+        top: -1rem;
+        font-size: 3rem;
+    }
+
+    .contact ul{
+        border-top: solid #8fd3f4;
+        border-left: none;
+    }
+
+    .contact h2{
+        position: relative;
+        left: 25rem;
+        bottom: -6rem;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+    }
+
+    .my-pic img{
+        position: relative;
+        bottom: -20rem;
     }
 
 }
