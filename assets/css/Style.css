@@ -407,7 +407,7 @@ header h1::selection,
 
     .work h2{
         position: relative;
-        padding: 0 10rem 2rem 4rem;
+        padding: 0 10rem 2rem 10rem;
         bottom: 2rem;
         left: -2rem;
         border-bottom: solid #8fd3f4;
